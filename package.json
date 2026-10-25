@@ -1,0 +1,30 @@
+{
+  "name": "distillation-lab",
+  "version": "1.0.0",
+  "description": "Expérience pédagogique française en 3D pour comprendre la distillation simple d’eau salée.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fares-Knight/distillation-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fares-Knight/distillation-lab/issues"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "vite": "8.3.4"
+  }
+}

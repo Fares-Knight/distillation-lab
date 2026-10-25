@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.vite/
+.tools/
+.openai/
+evidence/
+MISSION.md
+AGENTS.md
+.publication/
+*.log
+.env
+.env.*
+!.env.example
