@@ -14,7 +14,10 @@ Ce document distingue les contrôles historiques de la V1 et ceux de sa prépara
 | Tests et build de cette copie | **8/8 réussis**, build réussi ; JavaScript et CSS identiques au build applicatif antérieur, notices tierces complétées |
 | Distribution locale par HTTP | **13 contrôles réussis** : ressources conformes au build, CSP locale, méthodes HTTP et refus des chemins de pilotage ; aucun rendu navigateur déduit de ces tests HTTP |
 | Liens et image | Liens relatifs présents, capture inspectée sans donnée personnelle visible ni métadonnée EXIF/XMP/IPTC/commentaire ; quatre sources répondent, avec réserve ACS ci-dessous |
-| Publication distante, rendu GitHub et CI | En attente de la vérification de publication ; aucun résultat de CI revendiqué à ce stade |
+| Publication distante | [Dépôt public Fares-Knight/distillation-lab](https://github.com/Fares-Knight/distillation-lab), branche par défaut `main` ; commit initial publié `fc6da59881b17d7736687cf807c7216de2f25962` |
+| Rendu GitHub | README et capture observés dans Edge sans session GitHub ; image chargée, liens documentaires accessibles |
+| CI GitHub Actions | [Exécution initiale réussie](https://github.com/Fares-Knight/distillation-lab/actions/runs/40194303686) : installation, **8 tests réussis sans échec ni test ignoré**, build réussi sous Ubuntu / Node 24.21.0 ; [exécutions suivantes](https://github.com/Fares-Knight/distillation-lab/actions) |
+| Reproductibilité depuis GitHub | Clone public sans identifiants, installation depuis cache vide et configuration npm personnelle neutralisée, **8/8 tests et build réussis** sous Windows / Node 24.22.0 |
 
 L’avertissement de taille ne bloque pas le build. La taille du fichier ne constitue pas une mesure du temps de chargement.
 
@@ -45,7 +48,7 @@ Le build local a fonctionné dans les deux navigateurs sous une politique CSP in
 
 La [capture du README](images/distillation-lab.jpg) provient d'un contrôle réel du 18 octobre 2026, à l'étape Collecte, avec le réfrigérant sélectionné. L'ancienne démonstration hébergée a ensuite été supprimée par son propriétaire. La livraison GitHub du 25 octobre porte sur le code et le lancement local uniquement ; aucun site de démonstration n'est prévu.
 
-Aucun navigateur pilotable n'était connecté lors de la reprise du 25 octobre ; aucune nouvelle inspection visuelle ni nouvelle mesure de fluidité n'est revendiquée à cette date. Le scanner de secrets ne prouve pas l'absence absolue de donnée sensible ; ses résultats sont limités aux fichiers et références effectivement examinés. Les outils et dépendances tiers installés ne sont pas assimilés au code source destiné à publication.
+Le 25 octobre, le rendu de la présentation sur GitHub a été inspecté dans Edge après connexion du navigateur. Le code applicatif et les bundles JavaScript/CSS sont identiques à ceux vérifiés le 18 octobre ; aucune nouvelle mesure de fluidité ni nouvelle matrice de tests visuels de l'application n'est revendiquée. Le scanner de secrets ne prouve pas l'absence absolue de donnée sensible ; ses résultats sont limités aux fichiers et références effectivement examinés. Les outils et dépendances tiers installés ne sont pas assimilés au code source destiné à publication.
 
 ## Limites conservées
 

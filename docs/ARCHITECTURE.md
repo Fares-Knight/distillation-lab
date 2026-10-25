@@ -13,15 +13,7 @@ Distillation Lab est une page statique en HTML/CSS/JavaScript. Three.js **0.186.
 | [`src/style.css`](../src/style.css) | Présentation et disposition de l’interface |
 | [`tests/scenario.test.js`](../tests/scenario.test.js) | Invariants temporels et quantités graphiques |
 
-```mermaid
-flowchart LR
-    A[Lecture ou instant choisi] --> B[stateAt progress]
-    B --> C[État immuable]
-    C --> D[Objets Three.js]
-    C --> E[Textes et frise]
-    F[Caméra et sélection] --> D
-    F --> E
-```
+![La lecture ou l’instant choisi alimente stateAt(progress), dont l’état immuable détermine les objets Three.js, les textes et la frise. La caméra et la sélection restent indépendantes et influencent le rendu et la fiche.](images/architecture.svg)
 
 `progress` est normalisé entre 0 et 1. `stateAt` retourne notamment le temps du scénario, l’étape, les intensités de chauffage/refroidissement/vaporisation/condensation/collecte, les fractions graphiques de liquide et le résumé. Les entrées hors bornes sont ramenées aux bornes ; les entrées non numériques et `NaN` produisent l’état initial.
 
